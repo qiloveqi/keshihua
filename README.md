@@ -1,19 +1,5 @@
 ## 电商平台实时监控系统
 
-## 预览地址: [点击预览](https://www.bookbook.cc/vue2/data-view)
-
-## 项目前端地址(当前)：[点击前往](https://gitee.com/penggang-home/data-view)
-
-## 后端地址：[点击前往](https://gitee.com/penggang-home/koa_server)
-
-## 说明
-
-如果你觉得本项目对你有帮助的话，请点个 Star 支持一下 🐷(一个赞都没有，太可怜了)
-
-在学习该项目的过程中,如果你遇到任何问题都可以联系我,文末有联系方法。
-
-[www.bookbook.cc](https://www.bookbook.cc/) 这是我的个人主页,你也可以在上面找到我的联系方式
-
 ## 一、技术栈
 
 该项目主要使用 `Vue`搭配`Echarts`采用组件化的方式开发完成,此外项目中陆续使用有
@@ -30,7 +16,7 @@
 
 ```js
 // 首先你应当克隆该项目
-git clone https://gitee.com/penggang-home/data-view.git
+git clone https://gitee.com/qiloveqi/keshihua.git
 
 // 进入该项目
 cd data-view
