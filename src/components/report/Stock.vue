@@ -38,9 +38,6 @@ export default {
       ],
     }
   },
-  created() {
-    // this.$socket.registerCallBack('stockData', this.getData)
-  },
   computed: {
     ...mapState(['theme']),
   },
@@ -59,12 +56,6 @@ export default {
   mounted() {
     this.initChart()
     this.getData()
-    // this.$socket.send({
-    //   action: 'getData',
-    //   socketType: 'stockData',
-    //   chartName: 'stock',
-    //   value: '',
-    // })
     window.addEventListener('resize', this.screenAdapter)
     // 主动触发 响应式配置
     this.screenAdapter()
@@ -72,7 +63,6 @@ export default {
   destroyed() {
     window.removeEventListener('resize', this.screenAdapter)
     clearInterval(this.timerId)
-    // this.$socket.unRegisterCallBack('stockData')
   },
   methods: {
     // 初始化图表的方法
@@ -240,4 +230,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
 </style>

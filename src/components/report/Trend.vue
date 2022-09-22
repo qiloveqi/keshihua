@@ -5,7 +5,8 @@
       <span>{{ showTitle }}</span>
       <span class="iconfont title-icon" :style="comStyle">&#xe6eb;</span>
       <div class="select-con">
-        <div class="select-item" v-show="showMenu" @click.prevent="handleSelect(item.key)" v-for="item in selectTypes" :key="item.key">
+        <div class="select-item" v-show="showMenu" @click.prevent="handleSelect(item.key)" v-for="item in selectTypes"
+          :key="item.key">
           {{ item.text }}
         </div>
       </div>
@@ -35,10 +36,6 @@ export default {
       titleFontSize: 0,
       value: ''
     }
-  },
-  created() {
-    // 在组件创建完成之后，进行回调函数的注册
-    // this.$socket.registerCallBack('trendData', this.getData)
   },
   computed: {
     ...mapState(['theme']),
@@ -76,13 +73,6 @@ export default {
   mounted() {
     this.initChart()
     this.getData()
-    // websocket 请求数据
-    // this.$socket.send({
-    //   action: 'getData',
-    //   socketType: 'trendData',
-    //   chartName: 'trend',
-    //   value: ''
-    // })
     window.addEventListener('resize', this.screenAdapter)
     // 主动触发 响应式配置
     this.screenAdapter()
@@ -226,6 +216,7 @@ export default {
     position: absolute;
     left: -20px;
   }
+
   .title-icon {
     margin-left: 10px;
   }

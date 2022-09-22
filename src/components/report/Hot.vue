@@ -27,7 +27,6 @@ export default {
     }
   },
   created() {
-    // this.$socket.registerCallBack('hotData', this.getData)
     this.getData()
   },
   computed: {
@@ -61,19 +60,12 @@ export default {
   mounted() {
     this.initChart()
     this.getData()
-    // this.$socket.send({
-    //   action: 'getData',
-    //   socketType: 'hotData',
-    //   chartName: 'hotproduct',
-    //   value: '',
-    // })
     window.addEventListener('resize', this.screenAdapter)
     // 主动触发 响应式配置
     this.screenAdapter()
   },
   destroyed() {
     window.removeEventListener('resize', this.screenAdapter)
-    // this.$socket.unRegisterCallBack('hotData')
   },
   methods: {
     // 初始化图表的方法
@@ -117,7 +109,7 @@ export default {
             type: 'pie',
             label: {
               show: true,
-              formatter:`{b}{d}%`
+              formatter: `{b}{d}%`
             },
             // 高亮状态下的样式
             emphasis: {
@@ -218,12 +210,15 @@ export default {
     top: 50%;
     cursor: pointer;
   }
+
   i.icon-left {
     left: 10%;
   }
+
   i.icon-right {
     right: 10%;
   }
+
   .cate-name {
     position: absolute;
     right: 10%;

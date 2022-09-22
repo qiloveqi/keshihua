@@ -41,27 +41,15 @@ export default {
   },
   created() {
     this.getData()
-    // this.axiosInstance = axios.create({
-    //   baseURL: 'http://101.34.160.195:9997',
-    // })
-    // this.$socket.registerCallBack('mapData', this.getData)
   },
   mounted() {
     this.initChart()
-    // this.getData()
-    // this.$socket.send({
-    //   action: 'getData',
-    //   socketType: 'mapData',
-    //   chartName: 'map',
-    //   value: '',
-    // })
     window.addEventListener('resize', this.screenAdapter)
     // 主动触发 响应式配置
     this.screenAdapter()
   },
   destroyed() {
     window.removeEventListener('resize', this.screenAdapter)
-    // this.$socket.unRegisterCallBack('stockData')
   },
   methods: {
     // 初始化图表的方法
@@ -134,7 +122,6 @@ export default {
     },
     // 发送请求，获取数据
     async getData() {
-      // http://101.34.160.195:8888/api/map
       const { data: res } = await this.$http.get('/map')
       this.allData = res
 
@@ -220,4 +207,6 @@ export default {
 }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+
+</style>
