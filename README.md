@@ -62,16 +62,3 @@ npm run serve
 
 ![dark](./images/trend.png)
 
-## 四、 联系我
-
-最后，如果你有什么奇怪的想法或者疑惑你都可以联系我，希望我能帮助到你。
-
-- WX：P200048
-
-- QQ：2845486124
-
-- E-Mail：2845486124@qq.com
-
-| QQ                  | WeChat              |
-| ------------------- | ------------------- |
-| ![QQ](./images/qq.jpg) | ![wx](./images/wx.jpg) |
